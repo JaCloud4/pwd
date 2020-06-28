@@ -2,17 +2,19 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+  "github.com/gorilla/mux"
+  "net/http"
 )
 
 func helloworld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", "Helloworld")
 }
 func setuproute() {
-	//_:=mux.NewRouter()
-	http.HandleFunc("/api/home", helloworld)
-	http.ListenAndServe(":63342", nil)
+	r:=mux.NewRouter()
+	r.HandleFunc("/pwd", helloworld).Methods("GET")
+	http.ListenAndServe(":60952", r)
 }
 func main() {
+ // fmt.Println("Welcome to a PWD Generator")
 	setuproute()
 }
