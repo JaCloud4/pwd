@@ -1,14 +1,39 @@
-package sutil
+package main
 
 import (
-	"fmt"
-	"math/rand"
+  "bufio"
+  "fmt"
+  "log"
+  "math/rand"
+  "os"
+  "strconv"
+  "strings"
 )
 
 type listofsym []int
 
 //var listofsymbols []rune=[]rune{'@', '%', '+','\\','/','\'','!','#','$','^','?',':',',','(',')','{','}','[',']','~','-','_','.'}
 var listofsymbols []int = []int{64, 37, 43, 92, 47, 39, 33, 35, 36, 94, 63, 58, 44, 40, 41, 123, 125, 91, 93, 126, 45, 95, 46}
+
+func Intonly() int {
+  var intput int
+  var noint error
+
+  for true {
+    reader := bufio.NewReader(os.Stdin)
+    input, er := reader.ReadString('\n') // 5 3.3
+    if er != nil {log.Fatal(er)}
+
+    input = strings.TrimSpace(input)
+    if input == "stop" {break}
+
+    intput, noint = strconv.Atoi(input)
+    if noint != nil {
+      fmt.Println("Please enter a Integer: ")
+    } else {break}
+  }
+  return intput
+}
 
 func RandInt() string {
 	random := rand.Intn(9) //ASCII 48-57 == '0-9'
@@ -35,7 +60,8 @@ func RandChar() string {
 	return string(random)
 } //A-z some symbols 91,92,93,94,95
 
-func RandPwd(size int, p chan string) {
+func RandPwd(size int, p chan string)(string) {
+  var pwd string
 	for x := 0; x < size; x++ {
 		random := rand.Intn(5) + 1
 		switch random {
@@ -53,4 +79,6 @@ func RandPwd(size int, p chan string) {
 			fmt.Errorf("Where Waldo?")
 		}
 	}
+  pwd=<-p
+	return pwd
 }

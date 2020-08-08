@@ -1,0 +1,5 @@
+package putil
+
+func Hardreset(){
+
+}
