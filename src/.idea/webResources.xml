@@ -6,7 +6,6 @@
         <entryData>
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/src/main/templates" />
-            <path value="file://$PROJECT_DIR$/src/templates" />
           </resourceRoots>
         </entryData>
       </entry>

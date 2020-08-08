@@ -1,5 +1,0 @@
-package putil
-
-func Hardreset(){
-
-}
