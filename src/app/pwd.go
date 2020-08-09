@@ -36,7 +36,8 @@ func Intonly() int {
 }
 
 func RandInt() string {
-	random := rand.Intn(9) //ASCII 48-57 == '0-9'
+	random := rand.Intn(57-48)+48 //ASCII 48-57 == '0-9'
+//	fmt.Println(random)
 	return string(random)
 }
 func RandCap() string {

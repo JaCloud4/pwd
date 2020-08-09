@@ -12,6 +12,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -41,6 +43,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -56,18 +60,28 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/src" />
-      <recent name="$PROJECT_DIR$/src/app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sutil" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/src" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="PwdMaster" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="github.com/JaCloud4/PwdMaster" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="PwdMaster" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -82,6 +96,17 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main/main.go" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="PwdMaster" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/JaCloud4/PwdMaster" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -130,25 +155,25 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="99" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1596509252745" />
-    <state width="619" height="210" key="GridCell.Tab.0.bottom" timestamp="1596979386975">
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597001472518">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1596979386975" />
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597001472518" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1594435257777" />
-    <state width="619" height="210" key="GridCell.Tab.0.center" timestamp="1596979386974">
+    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597001472516">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1596979386974" />
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597001472516" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
-    <state width="619" height="210" key="GridCell.Tab.0.left" timestamp="1596979386973">
+    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597001472516">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1596979386973" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597001472516" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1594435257774" />
-    <state width="619" height="210" key="GridCell.Tab.0.right" timestamp="1596979386974">
+    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597001472517">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1596979386974" />
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597001472517" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
     <state width="1093" height="264" key="GridCell.Tab.1.bottom" timestamp="1596549459311">
       <screen x="0" y="0" width="1280" height="800" />
