@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE" />
+    <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE">
+      <change afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/PwdMaster.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/main/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/main/templates/pwdhome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/sutil/pwd.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +43,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main" />
   </component>
   <component name="ProjectId" id="1dxwIW1EZ0rIXHJulnktWJvYSd8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -155,25 +167,25 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="99" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1596509252745" />
-    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597018571187">
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597081183329">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597018571187" />
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597081183329" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1594435257777" />
-    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597018571186">
+    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597081183328">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597018571186" />
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597081183328" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
-    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597018571186">
+    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597081183327">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597018571186" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597081183327" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1594435257774" />
-    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597018571187">
+    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597081183328">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597018571187" />
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597081183328" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
     <state width="1093" height="264" key="GridCell.Tab.1.bottom" timestamp="1596549459311">
       <screen x="0" y="0" width="1280" height="800" />
