@@ -61,25 +61,25 @@ func RandChar() string {
 	return string(random)
 } //A-z some symbols 91,92,93,94,95
 
-func RandPwd(size int, p chan string)(string) {
+func RandPwd(size int) (string){
+
   var pwd string
 	for x := 0; x < size; x++ {
 		random := rand.Intn(5) + 1
 		switch random {
 		case 1:
-			p <- RandInt()
+			pwd+=RandInt()
 		case 2:
-			p <- RandCap()
+			pwd+=RandCap()
 		case 3:
-			p <- RandLow()
+			pwd+=RandLow()
 		case 4:
-			p <- RandSymbols()
+			pwd+=RandSymbols()
 		case 5:
-			p <- RandChar()
+			pwd+=RandChar()
 		default:
 			fmt.Errorf("Where Waldo?")
 		}
 	}
-  pwd=<-p
 	return pwd
 }

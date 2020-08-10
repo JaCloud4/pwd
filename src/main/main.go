@@ -8,8 +8,8 @@ import (
   "log"
   "math/rand"
   "net/http"
-  "time"
   "testing"
+  "time"
 )
 
 var numbers int
@@ -32,7 +32,12 @@ func TestAndPwd(t *testing.T) {
       p<-app.RandSymbols()
     case 5:
       p<-app.RandChar()
+    default:
+      t.Errorf("Not so reandom", random)
     }}
+  close(p)
+  _, er:=<-p
+  if er!=false{t.Errorf("Something went wrong with channel", p)}
 }
 
 func pwdhome(w http.ResponseWriter, r *http.Request) {
@@ -47,14 +52,17 @@ func setuproute() {
 	log.Fatal(http.ListenAndServe(":60952", r))
 }
 func main() {
-  var ch1 chan string
-  fmt.Println("Welcome to a PWD Generator")
+  rand.Seed(time.Now().UTC().UnixNano())
+ // var ch1 chan string defer close(ch1) pwdd:= <-ch1
+  fmt.Println("Welcome to a PWD Generator")  //setuproute()
+  for true{
   fmt.Println("How many numbers? Enter Zero to Quit...")
   reader :=app.Intonly()
-  go app.RandPwd(reader,ch1)
- pwdd:= <-ch1
+  if reader==0{break}
+  pwdd:=app.RandPwd(reader)
   fmt.Println(pwdd)
-  setuproute()
+  }
+  fmt.Println("Thank you for playing!!")
 }
 
 func successfullyrandomapis()  {
@@ -67,5 +75,4 @@ func RandPWDGenerator(){
   fmt.Println("Random Lowered:",app.RandLow())
   fmt.Println("Random Symbol:",app.RandSymbols())
   fmt.Println("Random Mixed:",app.RandChar())
-  //fmt.Println(RandPwd(12, nil))
 }
