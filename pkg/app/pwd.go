@@ -68,15 +68,15 @@ func RandPwd(size int) (string){
 		random := rand.Intn(5) + 1
 		switch random {
 		case 1:
-			pwd+=RandInt()
+			pwd+= RandInt()
 		case 2:
-			pwd+=RandCap()
+			pwd+= RandCap()
 		case 3:
-			pwd+=RandLow()
+			pwd+= RandLow()
 		case 4:
-			pwd+=RandSymbols()
+			pwd+= RandSymbols()
 		case 5:
-			pwd+=RandChar()
+			pwd+= RandChar()
 		default:
 			fmt.Errorf("Where Waldo?")
 		}

@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE" />
+    <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pwd.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/app/pwd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/PwdMaster.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/main/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/main/templates/pwdhome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/sutil/pwd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sutil/clutter.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sutil/clutter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sutil/pwd.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sutil/pwd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pwdhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pwdhome.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +52,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$GOPATH$" />
+      </list>
+    </option>
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
   <component name="ProjectId" id="1dxwIW1EZ0rIXHJulnktWJvYSd8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,23 +79,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/sutil" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go (1)">
@@ -91,7 +121,6 @@
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="PwdMaster" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main/main.go" />
@@ -147,6 +176,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="440" y="240" key="#Go_Modules/0.0.1280.800@0.0.1280.800" timestamp="1596509486405" />
+    <state x="373" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597120745160">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="373" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1597120745160" />
     <state x="210" y="0" key="CommitChangelistDialog2" timestamp="1596915331351">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -155,26 +188,30 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="99" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1596509252745" />
-    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597018571187">
+    <state x="495" y="132" key="EnvironmentVariablesDialog" timestamp="1597084880123">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597018571187" />
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1594435257777" />
-    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597018571186">
+    <state x="495" y="132" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1597084880123" />
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597122953065">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597018571186" />
-    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
-    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597018571186">
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597122953065" />
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597086252229" />
+    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597122953064">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597018571186" />
-    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1594435257774" />
-    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597018571187">
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597122953064" />
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1597086252228" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597122952916">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597018571187" />
-    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1594435257776" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597122952916" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1597086252227" />
+    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597122953065">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597122953065" />
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1597086252228" />
     <state width="1093" height="264" key="GridCell.Tab.1.bottom" timestamp="1596549459311">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -195,10 +232,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="278" y="168" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1596508863951" />
-    <state x="141" y="39" key="SettingsEditor" timestamp="1596510316668">
+    <state x="141" y="39" key="SettingsEditor" timestamp="1597111470181">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1596510316668" />
+    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597111470181" />
     <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1596508969737">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

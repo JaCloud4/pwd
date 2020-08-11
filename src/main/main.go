@@ -2,7 +2,7 @@ package main
 
 import (
   "fmt"
-  "github.com/JaCloud4/PwdMaster/src/app"
+  "github.com/JaCloud4/PwdMaster/pkg/app"
   "github.com/gorilla/mux"
   "html/template"
   "log"
@@ -12,8 +12,8 @@ import (
   "time"
 )
 
-var numbers int
-var listofInt []int
+//var numbers int
+//var listofInt []int
 
 func TestAndPwd(t *testing.T) {
   var size int
@@ -23,15 +23,15 @@ func TestAndPwd(t *testing.T) {
     random := rand.Intn(5) + 1
     switch random {
     case 1:
-      p<-app.RandInt()
+      p<- app.RandInt()
     case 2:
-      p<-app.RandCap()
+      p<- app.RandCap()
     case 3:
-      p<-app.RandLow()
+      p<- app.RandLow()
     case 4:
-      p<-app.RandSymbols()
+      p<- app.RandSymbols()
     case 5:
-      p<-app.RandChar()
+      p<- app.RandChar()
     default:
       t.Errorf("Not so reandom", random)
     }}
@@ -57,9 +57,9 @@ func main() {
   fmt.Println("Welcome to a PWD Generator")  //setuproute()
   for true{
   fmt.Println("How many numbers? Enter Zero to Quit...")
-  reader :=app.Intonly()
+  reader := app.Intonly()
   if reader==0{break}
-  pwdd:=app.RandPwd(reader)
+  pwdd:= app.RandPwd(reader)
   fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
@@ -71,8 +71,8 @@ func successfullyrandomapis()  {
 func RandPWDGenerator(){
   rand.Seed(time.Now().UnixNano())
   fmt.Println("Random Number:", app.RandInt())
-  fmt.Println("Random Uppered:",app.RandCap())
-  fmt.Println("Random Lowered:",app.RandLow())
-  fmt.Println("Random Symbol:",app.RandSymbols())
-  fmt.Println("Random Mixed:",app.RandChar())
+  fmt.Println("Random Uppered:", app.RandCap())
+  fmt.Println("Random Lowered:", app.RandLow())
+  fmt.Println("Random Symbol:", app.RandSymbols())
+  fmt.Println("Random Mixed:", app.RandChar())
 }
