@@ -5,145 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/react-app/src/setupTests.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/tryindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/1c/1c4fdc9488cea1904308e955428f608d9c7d9e110480b4b9e442f202fb84c8a0-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/30/304b5dfb359a8cf5916c79f34149211cd9aa3fc588643cee4eeb89a63673350e-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/31/31165b22e6318137eeea1ad2ebd3a359fdf556a7bc9f82c6b7a08938bd80fc98-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/48/488f59492c5d2acb89df6f7dd4adeb489e794f4c7f4b7099b1ce8bfd4bb76555-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/54/548f98aac2a23e32d63768a9ca9fdf91d83937a217dd3b1144936216f3fb8a08-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/5c/5cb40c01d0c5d082d49b61b76364617d8bbc4b6def98c2b502f69d6ce384a01a-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/5f/5f9682bea5915e8743bfbb8f95e6cfad985f5a91321dcd5e4dffa85ef74d00c7-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/9e/9ef02eef4d1ca822ef9c19402d1a5d9ff723102a6d3970dfb5b76462fc2aa81d-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/b7/b7f9642e6b4ab8f05069bcb95b5d250ca4f6cc05c682538b5193a6f716f5e80d-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/ba/ba4a2cd07861ad08240c0cd6ccf0ce3b8bd99be208470177149c7e7435232242-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/ba/ba726be5fe3175ce307ffbb66894434a29c393cabe2be4255b077d7124c9dd8e-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/bb/bbbd61459aa026330299776b1d1f619477b1a11fc4bd2ab3296e397c19e3aacf-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/bd/bd4f2c9f27621bcbafac568b44931c1c2b04822c2e4d344b12fa722fd3b181ce-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/bf/bfef0ca81505868cd99d5c8c09a67a89e53e7040a982aad94075f82399688350-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/c8/c83b2032646740cbb10b092bc9242d25f27f37638afd2110be03bbe6580eab6d-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/c8/c8f7e5b3b660aa13129fc2a692452adbea9f7d4abd2702bbc1333e7d74b65ef1-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/cd/cd45a0f6368779f87dc5736f11aa785ada35e4889fe9d3d3822a5a7ebe334c1d-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/d1/d174b4272139ce8511d240915c94abfdd5e7d1234b7974ee77922c4da747278e-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/dd/dd05fefb5482339d5ba5fcaafd1fe05b6f449d2b25cc01ce3458eea491a61e7d-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/e0/e023d5ffe9352eedc2a8b83936e1482a197d30667830e50d96be8b7910efc314-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/e6/e66f58230c2ebbe873077aa8335317bee479630e32d4bcc808e330691da4b3ad-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/e9/e9fedccfd82cd4a3ab954eadfa8ee75a5f5cbd25d2be5e8ef2ea141966670307-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/f0/f0bbd3913fe440007a6301920de6aec9b9f35cf0ab67381c0847a8c2c32e2df7-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/f1/f1ebb56ee937f20bcb02ed55e1e8ce1d260b9f36bb0c0b60e3f34dc8982a163c-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/f4/f47979510df7bb9adba45a9aa9139036d74864d078e4ac2607c005215716841b-a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/f8/f878407b02863501ad10123095a35085c68f89b2e1c693dfe6f8003ca1854daa-d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usr/Users/quese/Library/Caches/go-build/trim.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-tokens/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/loose-envify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/replace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/checkPropTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factoryWithThrowingShims.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/factoryWithTypeCheckers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/lib/ReactPropTypesSecret.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/prop-types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/prop-types.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.node.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.node.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/profiling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/server.node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/test-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-fizz.browser.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-fizz.browser.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/unstable-native-dependencies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/umd/react.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-tracing.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/cjs/scheduler.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/tracing-profiling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/tracing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-tracing.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-unstable_mock.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler-unstable_mock.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/umd/scheduler.profiling.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/scheduler/unstable_mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/app/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/sutil/pwd.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.idea/PwdMaster.iml" beforeDir="false" />
@@ -154,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/src/main/main.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/src/main/templates/pwdhome.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/src/sutil/pwd.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/pwdhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +76,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
@@ -343,25 +234,25 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="495" y="132" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1597084880123" />
-    <state width="786" height="210" key="GridCell.Tab.0.bottom" timestamp="1597290129387">
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom" timestamp="1597291310845">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="786" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597290129387" />
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597291310845" />
     <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597285294824" />
-    <state width="786" height="210" key="GridCell.Tab.0.center" timestamp="1597290129386">
+    <state width="1238" height="210" key="GridCell.Tab.0.center" timestamp="1597291310843">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="786" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597290129386" />
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597291310843" />
     <state width="1238" height="210" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1597285294822" />
-    <state width="786" height="210" key="GridCell.Tab.0.left" timestamp="1597290129383">
+    <state width="1238" height="210" key="GridCell.Tab.0.left" timestamp="1597291310842">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="786" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597290129383" />
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597291310842" />
     <state width="1238" height="210" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1597285294821" />
-    <state width="786" height="210" key="GridCell.Tab.0.right" timestamp="1597290129387">
+    <state width="1238" height="210" key="GridCell.Tab.0.right" timestamp="1597291310844">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="786" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597290129387" />
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597291310844" />
     <state width="1238" height="210" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1597285294823" />
     <state width="1093" height="264" key="GridCell.Tab.1.bottom" timestamp="1596549459311">
       <screen x="0" y="0" width="1280" height="800" />

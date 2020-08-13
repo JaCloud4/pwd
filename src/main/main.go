@@ -33,7 +33,7 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
   pwd:=password{
     Length: man,
     Code: pw,
-    Valid: len(pw)>0,}
+    Valid: len(pw)>=0,}
   fmt.Println(pwd,"\n",pw)
   html, _ := template.ParseFiles("/Users/quese/go/src/github.com/JaCloud4/PwdMaster/src/templates/tryindex.html")
   er:=html.Execute(w, pwd)
@@ -42,7 +42,10 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
 func setuproute() {
 	r := mux.NewRouter()
 	r.HandleFunc("/pwd", pwdhome).Methods("GET")
-  r.HandleFunc("/pwd/results", pwdresults)
+  r.HandleFunc("/pwd/results", pwdresults).Methods("POST")
+  r.HandleFunc("/pwd/{anythingelse}", func(writer http.ResponseWriter, request *http.Request) {
+    http.Redirect(writer, request,"/pwd", 301)
+  }).Methods("GET") //Proofing url
 	log.Fatal(http.ListenAndServe(":60952", r))
 }
 
