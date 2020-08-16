@@ -18,6 +18,10 @@ func pwdhome(w http.ResponseWriter, r *http.Request) {
   er:=html.Execute(w, nil)
   if er!=nil{log.Fatal(er)}
 }
+func pwdapi(w http.ResponseWriter, r *http.Request) {
+//mard
+}
+
 
 func pwdresults(w http.ResponseWriter, r *http.Request) {
   type password struct {
@@ -42,11 +46,18 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
 func setuproute() {
 	r := mux.NewRouter()
 	r.HandleFunc("/pwd", pwdhome).Methods("GET")
+  r.HandleFunc("/pwd/api/{num}", pwdapi).Methods("GET")
   r.HandleFunc("/pwd/results", pwdresults).Methods("POST")
+
+  r.HandleFunc("/pwd/", func(writer http.ResponseWriter, request *http.Request) {
+    http.Redirect(writer, request,"/pwd", 301)
+  }).Methods("GET")
   r.HandleFunc("/pwd/{anythingelse}", func(writer http.ResponseWriter, request *http.Request) {
     http.Redirect(writer, request,"/pwd", 301)
   }).Methods("GET") //Proofing url
-	log.Fatal(http.ListenAndServe(":60952", r))
+  address:=":60952"
+  fmt.Println("Program launched on localhost"+address)
+	log.Fatal(http.ListenAndServe(address, r))
 }
 
 func main() {
