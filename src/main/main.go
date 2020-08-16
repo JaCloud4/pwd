@@ -8,15 +8,15 @@ import (
   "log"
   "math/rand"
   "net/http"
-<<<<<<< HEAD
   "strconv"
-=======
->>>>>>> origin/master
   "testing"
   "time"
 )
 
-<<<<<<< HEAD
+
+var numbers int
+var listofInt []int
+
 func pwdhome(w http.ResponseWriter, r *http.Request) {
   html, _ := template.ParseFiles("/Users/quese/go/src/github.com/JaCloud4/PwdMaster/src/templates/tryindex.html")
   er:=html.Execute(w, nil)
@@ -25,37 +25,6 @@ func pwdhome(w http.ResponseWriter, r *http.Request) {
 func pwdapi(w http.ResponseWriter, r *http.Request) {
 //mard
 }
-
-=======
-var numbers int
-var listofInt []int
-
-func TestAndPwd(t *testing.T) {
-  var size int
-  var p chan string
-
-  for x:=0;x<size;x++{
-    random := rand.Intn(5) + 1
-    switch random {
-    case 1:
-      p<-app.RandInt()
-    case 2:
-      p<-app.RandCap()
-    case 3:
-      p<-app.RandLow()
-    case 4:
-      p<-app.RandSymbols()
-    case 5:
-      p<-app.RandChar()
-    default:
-      t.Errorf("Not so reandom", random)
-    }}
-  close(p)
-  _, er:=<-p
-  if er!=false{t.Errorf("Something went wrong with channel", p)}
-}
->>>>>>> origin/master
-
 func pwdresults(w http.ResponseWriter, r *http.Request) {
   type password struct {
     Length int
@@ -76,6 +45,7 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
   er:=html.Execute(w, pwd)
   if er!=nil{log.Fatal(er)}
 }
+
 func setuproute() {
 	r := mux.NewRouter()
 	r.HandleFunc("/pwd", pwdhome).Methods("GET")
@@ -92,8 +62,6 @@ func setuproute() {
   fmt.Println("Program launched on localhost"+address)
 	log.Fatal(http.ListenAndServe(address, r))
 }
-<<<<<<< HEAD
-
 func main() {
   setuproute()
   rand.Seed(time.Now().UTC().UnixNano())  // var ch1 chan string defer close(ch1) pwdd:= <-ch1
@@ -116,57 +84,33 @@ func RandPWDGenerator(){
   fmt.Println("Random Symbol:", app.RandSymbols())
   fmt.Println("Random Mixed:", app.RandChar())
 }
-func successfullyrandomapis()  {
-  RandPWDGenerator()
-=======
-func main() {
-  rand.Seed(time.Now().UTC().UnixNano())
- // var ch1 chan string defer close(ch1) pwdd:= <-ch1
-  fmt.Println("Welcome to a PWD Generator")  //setuproute()
-  for true{
-  fmt.Println("How many numbers? Enter Zero to Quit...")
-  reader :=app.Intonly()
-  if reader==0{break}
-  pwdd:=app.RandPwd(reader)
-  fmt.Println(pwdd)
-  }
-  fmt.Println("Thank you for playing!!")
->>>>>>> origin/master
-}
+
 func TestAndPwd(t *testing.T) {
   var size int
   var p chan string
-
-<<<<<<< HEAD
-  for x:=0;x<size;x++{
+  for x := 0; x < size; x++ {
     random := rand.Intn(5) + 1
     switch random {
     case 1:
-      p<- app.RandInt()
+      p <- app.RandInt()
     case 2:
-      p<- app.RandCap()
+      p <- app.RandCap()
     case 3:
-      p<- app.RandLow()
+      p <- app.RandLow()
     case 4:
-      p<- app.RandSymbols()
+      p <- app.RandSymbols()
     case 5:
-      p<- app.RandChar()
+      p <- app.RandChar()
     default:
       t.Errorf("Not so reandom", random)
-    }}
+    }
+  }
   close(p)
-  _, er:=<-p
-  if er!=false{t.Errorf("Something went wrong with channel", p)}
-=======
-func successfullyrandomapis()  {
- RandPWDGenerator()
->>>>>>> origin/master
+  _, er := <-p
+  if er != false {
+    t.Errorf("Something went wrong with channel", p)
+  }
 }
-func RandPWDGenerator(){
-  rand.Seed(time.Now().UnixNano())
-  fmt.Println("Random Number:", app.RandInt())
-  fmt.Println("Random Uppered:",app.RandCap())
-  fmt.Println("Random Lowered:",app.RandLow())
-  fmt.Println("Random Symbol:",app.RandSymbols())
-  fmt.Println("Random Mixed:",app.RandChar())
+func Testapi() {
+  RandPWDGenerator()
 }
