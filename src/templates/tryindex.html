@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1> <u>No Weakness,Strong Passwords </u></h1>
+<p> How many digits? {{.Length}}</p>
+  <div>
+    <form method="post" action="/pwd/results" >
+      <input name="size" type="number" min="1">
+      <input name="data" type="submit">
+    </form>
+</div>
+
+
+{{if .Valid}}
+ <p> Behold a strong password! <br>{{.Code}}</p>
+   {{else}}
+  <p>Please enter a number greater than 1.</p>
+{{end}}
+
+
+</body>
+</html>
