@@ -14,7 +14,7 @@
 <ol>
 <li>Successfully create first draft, connect the routing to html page</li>
 <li>Create POST and GET methods to update the html page using MUX and Hugo</li>
-<li>lots of validations and error logging </li>
+<li>lots of validations and error logging in html, setting a minuim and backdoor logic with no js </li>
 </ol>
 
 <h1>Next:</h1>
