@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1c43e2a-2790-417f-8f93-28f677a119e6" name="Default Changelist" comment="Pushing entire project using IDE">
       <change afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/.idea/PwdMaster.iml" beforeDir="false" />
@@ -46,7 +48,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
