@@ -62,7 +62,7 @@ func setuproute() {
   fmt.Println("Program launched on localhost"+address)
 	log.Fatal(http.ListenAndServe(address, r))
 }
-func main() {
+func man() {
   setuproute()
   rand.Seed(time.Now().UTC().UnixNano())  // var ch1 chan string defer close(ch1) pwdd:= <-ch1
   fmt.Println("Welcome to a PWD Generator")
@@ -72,6 +72,18 @@ func main() {
   if reader==0{break}
   pwdd:= app.RandPwd(reader)
   fmt.Println(pwdd)
+  }
+  fmt.Println("Thank you for playing!!")
+}
+func main() {
+  rand.Seed(time.Now().UTC().UnixNano())  // var ch1 chan string defer close(ch1) pwdd:= <-ch1
+  fmt.Println("Welcome to a PWD Generator")
+  for true{
+    fmt.Println("How many numbers? Enter Zero to Quit...")
+    reader := app.Intonly()
+    if reader==0{break}
+    pwdd:= app.RandPwd2(reader)
+    fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
 }

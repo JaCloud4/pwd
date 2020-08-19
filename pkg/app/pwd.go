@@ -8,10 +8,13 @@ import (
   "os"
   "strconv"
   "strings"
+  "time"
 )
 
+var(
+   Order []int = []int {1,2,3,4}
+)
 type listofsym []int
-
 //var listofsymbols []rune=[]rune{'@', '%', '+','\\','/','\'','!','#','$','^','?',':',',','(',')','{','}','[',']','~','-','_','.'}
 var listofsymbols []int = []int{64, 37, 43, 92, 47, 39, 33, 35, 36, 94, 63, 58, 44, 40, 41, 123, 125, 91, 93, 126, 45, 95, 46}
 
@@ -62,7 +65,6 @@ func RandChar() string {
 } //A-z some symbols 91,92,93,94,95
 
 func RandPwd(size int) (string){
-
   var pwd string
 	for x := 0; x < size; x++ {
 		random := rand.Intn(5) + 1
@@ -82,4 +84,43 @@ func RandPwd(size int) (string){
 		}
 	}
 	return pwd
+}
+
+
+func RandPwd2(size int) (string){
+  var pwd string
+  order := Order
+  rand.Shuffle(len(order), func(i, j int) {
+    order[i], order[j] =order[j], order[i]
+  })
+  for x := 0; x < size; x++ {
+    rand.Seed(time.Now().UnixNano())
+    if len(order)==0 {
+      order=Order
+      rand.Shuffle(len(order), func(i, j int) {
+        order[i], order[j] = order[j], order[i]
+      })
+    }
+    fmt.Println(order)
+    switch order[0] {
+    case 1:
+      pwd+= RandInt()
+      order=order[1:]
+    case 2:
+      pwd+= RandCap()
+      order=order[1:]
+    case 3:
+      pwd+= RandLow()
+      order=order[1:]
+    case 4:
+      pwd+= RandSymbols()
+      order=order[1:]
+    case 5:
+      pwd+= RandChar()
+      order=order[1:]
+    default:
+      fmt.Errorf("Where Waldo?")
+    }
+  }
+  return pwd
 }
