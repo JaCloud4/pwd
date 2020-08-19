@@ -12,7 +12,7 @@ import (
 )
 
 var(
-   Order []int = []int {1,2,3,4}
+   Order []int = []int {1,2,3,4,5}
 )
 type listofsym []int
 //var listofsymbols []rune=[]rune{'@', '%', '+','\\','/','\'','!','#','$','^','?',':',',','(',')','{','}','[',']','~','-','_','.'}
