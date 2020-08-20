@@ -17,10 +17,8 @@
 <li>lots of validations and error logging in html, setting a minuim and backdoor logic with no js </li>
 </ol>
 
-<h1>Currently,</h1>
-<h2>Have compls and pick up from feature branch to add more logic such as:</h2>
+<h1>In current feature branch I have pushed a new feature:</h1>
 <ol>
-<li>Have completed feature#2:Choosing from more criteria or specific passwords other than length</li>
-<li>Now: will punch to web branch for further web development, enhancements, and functionality</li>
-<li><strike>Will try to write simple notes here and there</strike> will do</li>
+<li>Now can choose what group of characters are excluded from password</li>
+<li> Will punch feature#2 to web branch for further web development, enhancements, and functionality</li>
 </ol>
