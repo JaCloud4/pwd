@@ -13,9 +13,9 @@ import (
 
 type listofsym []int
 var(
-   Order []int = []int {1,2,3,4,5}
-   Alpha=map[string]int {"Numbers":1,"Uppercase":2,"Lowercase":3,"Symbols":4,"Extra":5}
-   Beta=map[int]string {1:"Numbers",2:"Uppercase",3:"Lowercase",4:"Symbols",5:"Extra"}
+   Order []int = []int {}
+   Alpha=map[string]int {"Numbers":1,"Uppercase":2,"Lowercase":3,"Symbols":4}
+   Beta=map[int]string {1:"Numbers",2:"Uppercase",3:"Lowercase",4:"Symbols"}
    listofsymbols []int = []int{64, 37, 43, 92, 47, 39, 33, 35, 36, 94, 63, 58, 44, 40, 41, 123, 125, 91, 93, 126, 45, 95, 46}//listofsymbols []rune=[]rune{'@', '%', '+','\\','/','\'','!','#','$','^','?',':',',','(',')','{','}','[',']','~','-','_','.'}
    )
 
@@ -88,14 +88,13 @@ func RandPwd(size int) (string){
 }
 func RandOrder(size int) (string){
   var pwd string
-  order := Order
+  order := []int{1,2,3,4,5}
   rand.Shuffle(len(order), func(i, j int) {
     order[i], order[j] =order[j], order[i]
   })
   for x := 0; x < size; x++ {
     rand.Seed(time.Now().UnixNano())
     if len(order)==0 {
-      order=Order
       rand.Shuffle(len(order), func(i, j int) {
         order[i], order[j] = order[j], order[i]
       })
@@ -127,19 +126,23 @@ func RandomAlpha(size int, cuts []string) (string){
   var pwd string
 
   alpha:=Alpha
+  fmt.Println(len(cuts))
   for x:=0; x<len(cuts);x++{
+    fmt.Println(cuts[x])
     delete(alpha, cuts[x])
   }
+  fmt.Println(alpha)
 
   var order []int
   for _, orders := range alpha {
-    order = append(order, orders)
+    order=append(order, orders)
   }
 
+  keeporder:=order
   for x := 0; x < size; x++ {
     rand.Seed(time.Now().UnixNano())
     if len(order)==0 {
-      order=Order
+      order=keeporder
       rand.Shuffle(len(order), func(i, j int) {
         order[i], order[j] = order[j], order[i]
       })
@@ -157,9 +160,6 @@ func RandomAlpha(size int, cuts []string) (string){
       order=order[1:]
     case 4:
       pwd+= RandSymbols()
-      order=order[1:]
-    case 5:
-      pwd+= RandChar()
       order=order[1:]
     default:
       fmt.Errorf("Where Waldo?")

@@ -70,7 +70,7 @@ func man() {
   fmt.Println("How many numbers? Enter Zero to Quit...")
   reader := app.Intonly()
   if reader==0{break}
-  pwdd:= app.RandPwd(reader)
+  pwdd:= app.RandOrder(reader)
   fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
@@ -82,7 +82,8 @@ func main() {
     fmt.Println("How many numbers? Enter Zero to Quit...")
     reader := app.Intonly()
     if reader==0{break}
-    pwdd:= app.RandPwd2(reader)
+    //pwdd:= app.RandOrder(reader)
+    pwdd:=app.RandomAlpha(reader,[]string{"Numbers", "Symbols"})
     fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
