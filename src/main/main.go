@@ -13,14 +13,15 @@ import (
   "time"
 )
 
-
 var numbers int
 var listofInt []int
 
 func pwdhome(w http.ResponseWriter, r *http.Request) {
   html, _ := template.ParseFiles("/Users/quese/go/src/github.com/JaCloud4/PwdMaster/src/templates/tryindex.html")
-  er:=html.Execute(w, nil)
-  if er!=nil{log.Fatal(er)}
+  er := html.Execute(w, nil)
+  if er != nil {
+    log.Fatal(er)
+  }
 }
 func pwdapi(w http.ResponseWriter, r *http.Request) {
 
@@ -28,68 +29,75 @@ func pwdapi(w http.ResponseWriter, r *http.Request) {
 func pwdresults(w http.ResponseWriter, r *http.Request) {
   type password struct {
     Length int
-    Code string
-    Valid bool}
+    Code   string
+    Valid  bool
+  }
 
   rand.Seed(time.Now().UTC().UnixNano())
-  many:=r.FormValue("size")
+  many := r.FormValue("size")
   man, _ := strconv.Atoi(many)
   fmt.Println(man)
-  pw:=app.RandPwd(man)
-  pwd:=password{
+  pw := app.RandPwd(man)
+  pwd := password{
     Length: man,
-    Code: pw,
-    Valid: len(pw)>=0,}
-  fmt.Println(pwd,"\n",pw)
+    Code:   pw,
+    Valid:  len(pw) >= 0}
+  fmt.Println(pwd, "\n", pw)
   html, _ := template.ParseFiles("/Users/quese/go/src/github.com/JaCloud4/PwdMaster/src/templates/tryindex.html")
-  er:=html.Execute(w, pwd)
-  if er!=nil{log.Fatal(er)}
+  er := html.Execute(w, pwd)
+  if er != nil {
+    log.Fatal(er)
+  }
 }
 
 func setuproute() {
-	r := mux.NewRouter()
-	r.HandleFunc("/pwd", pwdhome).Methods("GET")
+  r := mux.NewRouter()
+  r.HandleFunc("/pwd", pwdhome).Methods("GET")
   r.HandleFunc("/pwd/api/{num}", pwdapi).Methods("GET")
   r.HandleFunc("/pwd/results", pwdresults).Methods("POST")
 
   r.HandleFunc("/pwd/", func(writer http.ResponseWriter, request *http.Request) {
-    http.Redirect(writer, request,"/pwd", 301)
+    http.Redirect(writer, request, "/pwd", 301)
   }).Methods("GET")
   r.HandleFunc("/pwd/{anythingelse}", func(writer http.ResponseWriter, request *http.Request) {
-    http.Redirect(writer, request,"/pwd", 301)
+    http.Redirect(writer, request, "/pwd", 301)
   }).Methods("GET") //Proofing url
-  address:=":60952"
-  fmt.Println("Program launched on localhost"+address)
-	log.Fatal(http.ListenAndServe(address, r))
+  address := ":60952"
+  fmt.Println("Program launched on localhost" + address)
+  log.Fatal(http.ListenAndServe(address, r))
 }
 func man() {
   setuproute()
-  rand.Seed(time.Now().UTC().UnixNano())  // var ch1 chan string defer close(ch1) pwdd:= <-ch1
+  rand.Seed(time.Now().UTC().UnixNano()) // var ch1 chan string defer close(ch1) pwdd:= <-ch1
   fmt.Println("Welcome to a PWD Generator")
-  for true{
-  fmt.Println("How many numbers? Enter Zero to Quit...")
-  reader := app.Intonly()
-  if reader==0{break}
-  pwdd:= app.RandOrder(reader)
-  fmt.Println(pwdd)
+  for true {
+    fmt.Println("How many numbers? Enter Zero to Quit...")
+    reader := app.Intonly()
+    if reader == 0 {
+      break
+    }
+    pwdd := app.RandOrder(reader)
+    fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
 }
 func main() {
-  rand.Seed(time.Now().UTC().UnixNano())  // var ch1 chan string defer close(ch1) pwdd:= <-ch1
+  rand.Seed(time.Now().UTC().UnixNano()) // var ch1 chan string defer close(ch1) pwdd:= <-ch1
   fmt.Println("Welcome to a PWD Generator")
-  for true{
+  for true {
     fmt.Println("How many numbers? Enter Zero to Quit...")
     reader := app.Intonly()
-    if reader==0{break}
+    if reader == 0 {
+      break
+    }
     //pwdd:= app.RandOrder(reader)
-    pwdd:=app.RandomAlpha(reader,[]string{"Numbers", "Symbols"})
+    pwdd := app.RandomAlpha(reader, []string{"Numbers", "Symbols"})
     fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
 }
 
-func RandPWDGenerator(){
+func RandPWDGenerator() {
   rand.Seed(time.Now().UnixNano())
   fmt.Println("Random Number:", app.RandInt())
   fmt.Println("Random Uppered:", app.RandCap())
