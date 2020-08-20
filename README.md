@@ -17,7 +17,7 @@
 <li>lots of validations and error logging in html, setting a minuim and backdoor logic with no js </li>
 </ol>
 
-<h1>In current feature branch I have pushed a new feature:</h1>
+<h2>In current feature branch I have pushed a new feature:</h2>
 <ol>
 <li>Now can choose what group of characters are excluded from password</li>
 <li> Will punch feature#2 to web branch for further web development, enhancements, and functionality</li>
