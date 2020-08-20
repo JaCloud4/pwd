@@ -23,7 +23,7 @@ func pwdhome(w http.ResponseWriter, r *http.Request) {
   if er!=nil{log.Fatal(er)}
 }
 func pwdapi(w http.ResponseWriter, r *http.Request) {
-//mard
+
 }
 func pwdresults(w http.ResponseWriter, r *http.Request) {
   type password struct {
