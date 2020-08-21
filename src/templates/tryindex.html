@@ -6,27 +6,27 @@
 </head>
 <body>
 <h1> <u>No Weakness,Strong Passwords </u></h1>
-  <div>
-    <form method="post" action="/pwd/results" >
-      <h4>Any Restrictions? (Select to Exclude)</h4>
-      <input id="Num" name="Numbers" type="checkbox" value="Number"/>
-      <label for="Num">Numbers</label><br>
-      <input id="Upper" name="Uppercase" type="checkbox" value="Uppercase">
-      <label for="Upper">Uppercase</label><br>
-      <input id="Lower" name="Lowercase" type="checkbox" value="Lowercase">
-      <label for="Lower">Lowercase</label><br>
-      <input id="Sym" name="Symbols" type="checkbox" value="Symbols">
-      <label for="Sym">Symbols</label><br>
-      <h4> How many digits? {{.Length}}</h4>
-      <input name="size" type="number" min="1"/>
-      <input name="data" type="submit"><br>
-    </form>
+<div>
+  <form method="post" action="/pwd/results" >
+    <h4>Any Restrictions? (Select to Exclude)</h4>
+    <input id="Num" name="Exclusions" type="checkbox" value="Numbers"/>
+    <label for="Num">Numbers</label><br>
+    <input id="Upper" name="Exclusions" type="checkbox" value="Uppercase">
+    <label for="Upper">Uppercase</label><br>
+    <input id="Lower" name="Exclusions" type="checkbox" value="Lowercase">
+    <label for="Lower">Lowercase</label><br>
+    <input id="Sym" name="Exclusions" type="checkbox" value="Symbols">
+    <label for="Sym">Symbols</label><br>
+    <h4> How many digits? {{.Length}}</h4>
+    <input name="size" type="number" min="1"/>
+    <button type="button|submit|reset">submit</button><br>
+  </form>
 </div>
 
 
 {{if .Valid}}
- <p> Behold a strong password! <br>{{.Code}}</p>
-   {{else}}
+  <p> Behold a strong password! <br>{{.Code}}</p>
+{{else}}
   <p>Please enter a number greater than 1.</p>
 {{end}}
 

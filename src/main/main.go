@@ -35,6 +35,7 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
 
   rand.Seed(time.Now().UTC().UnixNano())
   many := r.FormValue("size")
+  //length, exclude := r.FormValue("size"), r.Form["Exclusions"]
   man, _ := strconv.Atoi(many)
   fmt.Println(man)
   pw := app.RandPwd(man)
