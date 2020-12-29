@@ -4,5 +4,5 @@ const message="Welcome!!";
 const welcome= <h1>I said {{message}}</h1>;
 ReactDOM.render(
 welcome,
-  document.getElementById('demo')
+  document.getElementById('root')
 );
