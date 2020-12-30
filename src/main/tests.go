@@ -25,8 +25,8 @@ func TestingExclusions() {
       break
     }
     //pwdd:= app.RandOrder(reader)
-    pwdd := app.RandomAlpha(reader, []string{"Numbers", "Symbols"})
-    fmt.Println(pwdd)
+    //pwdd := app.Rand(reader, []string{"Uppercase", "Lowercase", "Symbols"})
+   // fmt.Println(pwdd)
   }
   fmt.Println("Thank you for playing!!")
 }

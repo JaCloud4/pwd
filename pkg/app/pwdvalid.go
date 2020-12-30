@@ -72,3 +72,34 @@ func RandTestGenerator() {
   fmt.Println("Random Symbol:", RandSymbols())
   fmt.Println("Random Mixed:", RandChar())
 }
+
+func excludeThese(a []string) ([]int){
+  list:=map[string]int {"Numbers":1,"Uppercase":2,"Lowercase":3,"Symbols":4}
+  var newlist []int
+  for _, item := range a{
+    delete(list, item)
+  }
+  for _,num:= range list{
+    newlist=append(newlist,num)
+  }
+  return newlist
+}
+func excludeD(a []int, b []int) []int {
+  // Turn b into a map
+  var m map[int]bool
+  m = make(map[int]bool, len(b))
+  for _, s := range b {
+    m[s] = false
+  }
+  // Append values from the longest slice that don't exist in the map
+  var diff []int
+  for _, s := range a {
+    if _, ok := m[s]; !ok {
+      diff = append(diff, s)
+      continue
+    }
+    m[s] = true
+  }
+  // Sort the resulting slice
+  return diff
+}

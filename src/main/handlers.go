@@ -12,6 +12,7 @@ import (
   "time"
 )
 
+//Done. Serves homepage
 func pwdhome(w http.ResponseWriter, r *http.Request) {
   html, _ := template.ParseFiles("/Users/quese/go/src/github.com/JaCloud4/PwdMaster/src/templates/tryindex.html")
   er := html.Execute(w, nil)
@@ -29,13 +30,15 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
     Valid  bool
   }
   rand.Seed(time.Now().UTC().UnixNano())
-  many := r.FormValue("size")
-  //length, exclude := r.FormValue("size"), r.Form["Exclusions"]
-  man, _ := strconv.Atoi(many)
-  fmt.Println(man)
-  pw := app.RandPwd(man)
+  err:=r.ParseForm()
+  if err!=nil{log.Fatal(err)}
+  inputs:=r.Form //Parse form and extract slices in map
+  exclude:=inputs["Exclusions"]//fmt.Println(reflect.TypeOf(inputs["Exclusions"])) //Slice of Integer, will test
+  fmt.Println(len(exclude))//Will use lens(exclude)==4 {redirect}
+  size, _:= strconv.Atoi(inputs["size"][0])  //fmt.Println(size)
+  pw := app.RandPwdEx(size, exclude) //SUCCESS!  | ONly need to clear What if..all exclusions are marked
   pwd := password{
-    Length: man,
+    Length: size,
     Code:   pw,
     Valid:  len(pw) >= 0}
   fmt.Println(pwd, "\n", pw)
@@ -46,7 +49,7 @@ func pwdresults(w http.ResponseWriter, r *http.Request) {
   }
 }
 
-func setuproute() {
+func GoStart(_ string) {
   r := mux.NewRouter()
   r.HandleFunc("/pwd", pwdhome).Methods("GET")
   r.HandleFunc("/pwd/api/{num}", pwdapi).Methods("GET")

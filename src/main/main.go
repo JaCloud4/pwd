@@ -19,7 +19,7 @@ handlers.go> pwdresults()
  */
 func main() {
   fmt.Println("http://localhost:60952/pwd")
-  setuproute()
+  GoStart("n") //located in handlers.go
 }
 //Running a Console Version
 func consoleplay()  {
@@ -27,7 +27,7 @@ func consoleplay()  {
   rand.Seed(time.Now().UTC().UnixNano()) // var ch1 chan string defer close(ch1) pwdd:= <-ch1
   for true {
     fmt.Println("How many numbers? Enter Zero to Quit...")
-    reader := app.Intonly()
+    reader := app.Intonly() // located in pkg/app
     if reader == 0 {
       break
     }
