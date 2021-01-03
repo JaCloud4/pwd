@@ -19,7 +19,7 @@
     <label for="Sym">Symbols</label><br>
     <h4> How many digits? {{.Length}}</h4>
     <input name="size" type="number" min="1"/>
-    <button type="button|submit|reset">submit</button><br>
+    <button type="button|submit">submit</button><br>
   </form>
 </div>
 
@@ -27,7 +27,7 @@
 {{if .Valid}}
   <p> Behold a strong password! <br>{{.Code}}</p>
 {{else}}
-  <p>Please enter a number greater than 1.</p>
+  <p>{{.Code}}</p>
 {{end}}
 
 

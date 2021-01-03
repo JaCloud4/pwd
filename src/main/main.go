@@ -12,7 +12,7 @@ var listofInt []int
 
 /*Running the Web Service, BASIC COMPLETED!
 Currently working on Exclusion:
-tests.go> TestingExclusions()
+test.go> TestingExclusions()
 pwdgen.go> RandPwdEx()
 handlers.go> pwdresults()
 

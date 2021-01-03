@@ -1,4 +1,4 @@
-package main
+package test
 
 import (
   "fmt"
@@ -18,6 +18,7 @@ func BasicCompTest() {
 func TestingExclusions() {
   rand.Seed(time.Now().UTC().UnixNano()) // var ch1 chan string defer close(ch1) pwdd:= <-ch1
   fmt.Println("Welcome to a PWD Generator")
+
   for true {
     fmt.Println("How many numbers? Enter Zero to Quit...")
     reader := app.Intonly()
@@ -30,7 +31,47 @@ func TestingExclusions() {
   }
   fmt.Println("Thank you for playing!!")
 }
+func APIPrint(t *testing.T)  {
+  rand.Seed(time.Now().UTC().UnixNano()) // var ch1 chan string defer close(ch1) pwdd:= <-ch1
+  fmt.Println("Welcome to a PWD Generator")
+  var tests = []struct{
+    input string
+    expected int
+  }{}
+    for _,test := range tests{
+      fmt.Println(test)
+    }
+    fmt.Println(tests)
+  for true {
+    fmt.Println("How many numbers? Enter Zero to Quit...")
+}
+}
+func NetwongerTest(t *testing.T){
+  //make call to API, enter values
 
+  /* pwdvalid>Newtonger
+  func Intonly(input string) int {
+    var intput int
+    var noint error
+  if input=="" {
+    for true {
+      reader := bufio.NewReader(os.Stdin)
+      input, er := reader.ReadString('\n') // 5 3.3
+      if er != nil {log.Fatal(er)}
+
+      input = strings.TrimSpace(input)
+      if input == "stop" {break}
+
+      intput, noint = strconv.Atoi(input)
+      if noint != nil {
+        fmt.Println("Please enter a Integer: ")
+      }}} else if input == "1" {
+
+      }
+      return intput
+  }
+   */
+}
 func POAusingChannels(t *testing.T) {
   var size int
   var p chan string

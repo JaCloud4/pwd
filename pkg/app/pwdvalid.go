@@ -6,6 +6,7 @@ import (
   "log"
   "math/rand"
   "os"
+  "reflect"
   "strconv"
   "strings"
   "time"
@@ -17,6 +18,8 @@ IntOnly> Can check and get Only Integer Values
 Rand*> Get Random Integers,Uppercase,Lowercase, and Symbols
 RandChar> Serves as a wildcard
  */
+
+
 func Intonly() int {
   var intput int
   var noint error
@@ -37,6 +40,22 @@ func Intonly() int {
   return intput
 }
 
+func IntApi(input string) int {
+  var number int
+  fmt.Println(reflect.TypeOf(input))
+  num,err:=strconv.Atoi(input)
+  fmt.Println(num, "\n",err)
+  for true {
+    if num,err:=strconv.Atoi(input);err == nil && num>0  {
+    number=num
+    break
+  } else {
+    number=0
+    fmt.Println("Try again.")}
+    break
+  }
+  return number
+}
 func RandInt() string {
   random := rand.Intn(57-48)+48 //ASCII 48-57 == '0-9'
   //	fmt.Println(random)
@@ -84,22 +103,14 @@ func excludeThese(a []string) ([]int){
   }
   return newlist
 }
-func excludeD(a []int, b []int) []int {
-  // Turn b into a map
-  var m map[int]bool
-  m = make(map[int]bool, len(b))
-  for _, s := range b {
-    m[s] = false
+func excludeApi(a []string) ([]int){
+  list:=map[string]int {"n":1,"u":2,"l":3,"s":4}
+  var newlist []int
+  for _, item := range a{
+    delete(list, item)
   }
-  // Append values from the longest slice that don't exist in the map
-  var diff []int
-  for _, s := range a {
-    if _, ok := m[s]; !ok {
-      diff = append(diff, s)
-      continue
-    }
-    m[s] = true
+  for _,num:= range list{
+    newlist=append(newlist,num)
   }
-  // Sort the resulting slice
-  return diff
+  return newlist
 }

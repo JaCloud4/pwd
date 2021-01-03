@@ -38,29 +38,29 @@ func RandPwd(size int) (string){
 //Password Generator with Exclusions
 func RandPwdEx(size int, exclude []string) (string){
   var pwd string
-  if len(exclude)==0{
-  for x := 0; x < size; x++ {
-    random := rand.Intn(5) + 1
-    switch random {
-    case 1:
-      pwd+= RandInt()
-    case 2:
-      pwd+= RandCap()
-    case 3:
-      pwd+= RandLow()
-    case 4:
-      pwd+= RandSymbols()
-    case 5:
-      pwd+= RandChar()
-    default:
-      fmt.Errorf("Where Waldo?")
-    }
-  }} else {
+  if len(exclude)==0 {
+    for x := 0; x < size; x++ {
+      random := rand.Intn(5) + 1
+      switch random {
+        case 1:
+          pwd+= RandInt()
+        case 2:
+          pwd+= RandCap()
+        case 3:
+          pwd+= RandLow()
+        case 4:
+          pwd+= RandSymbols()
+        case 5:
+          pwd+= RandChar()
+        default:
+          fmt.Errorf("Where Waldo?")
+    }}} else if len(exclude)==4 {
+      pwd=pwd+"Too Exclusive! Please use three or less criteria's."
+  } else {
     pwd=TailoredPwd(size, exclude)
       }
   return pwd
 }
-
 func RandOrder(size int) (string){
   var pwd string
   order := []int{1,2,3,4,5}
@@ -99,23 +99,27 @@ func RandOrder(size int) (string){
 }
 func TailoredPwd(size int, cuts []string) (string){
   var pwd string
-  list:=excludeThese(cuts)
-
+  var list []int
+  if cuts[0]=="n" || cuts[0]=="u" || cuts[0]=="l" || cuts[0]=="s"{
+    list=excludeApi(cuts)
+   } else if cuts[0]=="Numbers" || cuts[0]=="Uppercase" || cuts[0]=="Lowercase" || cuts[0]=="Symbols" {
+    list=excludeThese(cuts)
+} else{}
   for x := 0; x < size; x++ {
     random := rand.Intn(len(list))
     switch list[random]{
-    case 1:
-      pwd+= RandInt()
-    case 2:
-      pwd+= RandCap()
-    case 3:
-      pwd+= RandLow()
-    case 4:
-      pwd+= RandSymbols()
-    case 5:
-      pwd+= RandChar()
-    default:
-      fmt.Errorf("Where Waldo?")
+      case 1:
+        pwd+= RandInt()
+      case 2:
+        pwd+= RandCap()
+      case 3:
+        pwd+= RandLow()
+      case 4:
+        pwd+= RandSymbols()
+      case 5:
+        pwd+= RandChar()
+      default:
+        fmt.Errorf("Where Waldo?")
     }
   }
   return pwd
