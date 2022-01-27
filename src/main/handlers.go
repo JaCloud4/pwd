@@ -3,7 +3,7 @@ package main
 import (
   "encoding/json"
   "fmt"
-  "github.com/JaCloud4/PwdMaster/pkg/app"
+  "github.com/QueseGen/PwdMaster/pkg/app"
   "github.com/gorilla/mux"
   "html/template"
   "log"
