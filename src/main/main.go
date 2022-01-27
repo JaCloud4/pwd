@@ -2,7 +2,7 @@ package main
 
 import (
   "fmt"
-  "github.com/JaCloud4/PwdMaster/pkg/app"
+  "github.com/QueseGen/PwdMaster/pkg/app"
   "math/rand"
   "time"
 )
